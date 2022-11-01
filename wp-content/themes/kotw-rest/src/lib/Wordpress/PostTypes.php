@@ -14,6 +14,7 @@ class PostTypes {
 
 	public function __construct() {
 		self::register();
+		self::custom_book_post_type();
 	}
 
 	/**
@@ -42,4 +43,27 @@ class PostTypes {
 		);
 
 	}
+
+	// Create custom post book
+	public static function custom_book_post_type() {
+
+        $book_post_type = new PostType(
+            'book',
+            'book',
+            'book',
+            array( 'book-category' ),
+            array(
+                'title',
+                'thumbnail',
+                'editor',
+                'excerpt',
+                'revisions',
+            ),
+            'dashicons-welcome-learn-more',
+            true,
+            array(),
+            'Books'
+        );
+
+    }
 }

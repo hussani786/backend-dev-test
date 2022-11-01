@@ -18,6 +18,7 @@ use KotwRest\Endpoints\User\IsLogged as IsLoggedEndpoint;
 use KotwRest\Endpoints\User\Register as RegisterEndpoint;
 use KotwRest\Endpoints\User\Profile as GetUserProfileEndpoint;
 use KotwRest\Endpoints\Pages\GetPage as GetPageEndpoint;
+use KotwRest\Endpoints\Books\GetBook as GetBookEndpoint;
 
 class Init {
 
